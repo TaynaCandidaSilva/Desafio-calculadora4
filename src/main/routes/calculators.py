@@ -11,7 +11,7 @@ def calculator_4():
         data = request.json
         numbers = data.get("numbers")
 
-        response = calculator4_factory.calculate_average(numbers)
+        response = calculator4_factory.calculate(numbers)
         return jsonify(response), 200
     except Exception as exception:
         error_response = handle_errors(exception)
