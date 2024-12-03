@@ -1,5 +1,5 @@
 from flask import request as FlaskRequest
-from src.errors.http_unprocessable_entity import HttpUnprocessableEntityError
+from ..errors.http_unprocessable_entity import HttpUnprocessableEntityError
 
 
 class Calculator4:
